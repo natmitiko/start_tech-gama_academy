@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>.: JobsNET :.</title>
+    <!-- <h1> Sua grande oportunidade! </h1> -->
+</head>
+
+<body>
+    <div id="formulario" class="container">
+        <h1 class="titulo"> Formulário para candidatura </h1>
+        <p> Preencha os campos abaixo com seus dados: </p>
+    </div>
+
+    <div id="dadosPessoais" class="container">
+        <h2 class="titulo"> Dados Pessoais </h2>
+        <hr />
+
+        <form>
+
+            <div class="campo">
+                <label for="name">Nome completo*</label>
+                <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="campo">
+                <label for="cargo">Cargo pretendido</label>
+                <input type="text" id="cargo" name="cargo" />
+            </div>
+
+            <fieldset>                                
+                <div class="campo">
+                    <label for="dia"> Data de nascimento* </label>                    
+                    <select id="dia" name="dia" required>
+                        <option selected disabled value="">Dia</option>
+                        <option value="1"> 1 </option>
+                        <option value="2"> 2 </option>
+                        <option value="3"> 3 </option>
+                        <option value="4"> 4 </option>
+                        <option value="5"> 5 </option>
+                        <option value="6"> 6 </option>
+                        <option value="7"> 7 </option>
+                        <option value="8"> 8 </option>
+                        <option value="9"> 9 </option>
+                        <option value="10"> 10 </option>
+                        <option value="11"> 11 </option>
+                        <option value="12"> 12 </option>
+                        <option value="13"> 13 </option>
+                        <option value="14"> 14 </option>
+                        <option value="15"> 15 </option>
+                        <option value="16"> 16 </option>
+                        <option value="17"> 17 </option>
+                        <option value="18"> 18 </option>
+                        <option value="19"> 19 </option>
+                        <option value="20"> 20 </option>
+                        <option value="21"> 21 </option>
+                        <option value="22"> 22 </option>
+                        <option value="23"> 23 </option>
+                        <option value="24"> 24 </option>
+                        <option value="25"> 25 </option>
+                        <option value="26"> 26 </option>
+                        <option value="27"> 27 </option>
+                        <option value="28"> 28 </option>
+                        <option value="29"> 29 </option>
+                        <option value="30"> 30 </option>
+                        <option value="31"> 31 </option>
+                    </select>
+                </div>
+
+                <div class="campo" id="mes">
+                    <label for="mes">/</label>
+                    <select id="mes" name="mes" required>
+                        <option selected disabled value="">Mês</option>
+                        <option value="jan"> Janeiro </option>
+                        <option value="fev"> Fevereiro </option>
+                        <option value="mar"> Março </option>
+                        <option value="abr"> Abril </option>
+                        <option value="mai"> Maio </option>
+                        <option value="jun"> Junho </option>
+                        <option value="jul"> Julho </option>
+                        <option value="ago"> Agosto </option>
+                        <option value="set"> Setembro </option>
+                        <option value="out"> Outubro </option>
+                        <option value="nov"> Novembro </option>
+                        <option value="dez"> Dezembro </option>
+                    </select>
+                </div>
+
+                
+                <div class="campo">
+                    <label for="ano"> / </label>
+                    <select id="ano" name="ano" required>
+                        <option selected disabled value="">Ano</option>
+                        <option value="50"> 1950 </option>
+                        <option value="51"> 1951 </option>
+                        <option value="52"> 1952 </option>
+                        <option value="53"> 1953 </option>
+                        <option value="54"> 1954 </option>
+                        <option value="55"> 1955 </option>
+                        <option value="56"> 1956 </option>
+                        <option value="57"> 1957 </option>
+                        <option value="58"> 1958 </option>
+                        <option value="59"> 1959 </option>
+                        <option value="60"> 1960 </option>
+                        <option value="61"> 1961 </option>
+                        <option value="62"> 1962 </option>
+                        <option value="63"> 1963 </option>
+                        <option value="64"> 1964 </option>
+                        <option value="65"> 1965 </option>
+                        <option value="66"> 1966 </option>
+                        <option value="67"> 1967 </option>
+                        <option value="68"> 1968 </option>
+                        <option value="69"> 1969 </option>
+                        <option value="70"> 1970 </option>
+                        <option value="71"> 1971 </option>
+                        <option value="72"> 1972 </option>
+                        <option value="73"> 1973 </option>
+                        <option value="74"> 1974 </option>
+                        <option value="75"> 1975 </option>
+                        <option value="76"> 1976 </option>
+                        <option value="77"> 1977 </option>
+                        <option value="78"> 1978 </option>
+                        <option value="79"> 1979 </option>
+                        <option value="80"> 1980 </option>
+                        <option value="81"> 1981 </option>
+                        <option value="82"> 1982 </option>
+                        <option value="83"> 1983 </option>
+                        <option value="84"> 1984 </option>
+                        <option value="85"> 1985 </option>
+                        <option value="86"> 1986 </option>
+                        <option value="87"> 1987 </option>
+                        <option value="88"> 1988 </option>
+                        <option value="89"> 1989 </option>
+                        <option value="90"> 1990 </option>
+                        <option value="91"> 1991 </option>
+                        <option value="92"> 1992 </option>
+                        <option value="93"> 1993 </option>
+                        <option value="94"> 1994 </option>
+                        <option value="95"> 1995 </option>
+                        <option value="96"> 1996 </option>
+                        <option value="97"> 1997 </option>
+                        <option value="98"> 1998 </option>
+                        <option value="99"> 1999 </option>
+                        <option value="00"> 2000 </option>
+                        <option value="01"> 2001 </option>
+                        <option value="02"> 2002 </option>
+                        <option value="03"> 2003 </option>
+                        <option value="04"> 2004 </option>
+                        <option value="05"> 2005 </option>
+                    </select>
+                </div>
+
+            </fieldset>
+
+            <div class="campo">
+                <label for="civil"> Estado civil </label>
+                <select id="civil" name="civil">
+                    <option selected disabled value=""> Selecione </option>
+                    <option value="solteiro"> Solteiro(a) </option>
+                    <option value="casado"> Casado(a) </option>
+                    <option value="uniao"> União estável </option>
+                    <option value="divorciado"> Divorciado(a) </option>
+                    <option value="viuvo"> Viúvo(a) </option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="sexo"> Sexo </label>
+                <select id="sexo" name="sexo">
+                    <option selected disabled value=""> Selecione </option>
+                    <option value="fem"> Feminino </option>
+                    <option value="masc"> Masculino </option>
+                    <option value="naoDeclarado"> Não declarado </option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="endereco">Endereço*</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Ex: Rua, num., bloco, apto" required />
+            </div>
+
+            <div class="campo">
+                <label for="bairro">Bairro*</label>
+                <input type="text" id="bairro" name="bairro" required />
+            </div>
+
+            <div class="campo">
+                <label for="cidade">Cidade*</label>
+                <input type="text" id="cidade" name="cidade" required />
+            </div>
+
+            <div class="campo">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" />
+            </div>
+
+            <div class="campo">
+                <label for="fixo1">Telefone fixo 1*</label>
+                <input type="text" id="fixo1" name="fixo1" required />
+            </div>
+
+            <div class="campo">
+                <label for="fixo2">Telefone fixo 2</label>
+                <input type="text" id="fixo2" name="fixo2" />
+            </div>
+
+            <div class="campo">
+                <label for="celular">Celular*</label>
+                <input type="text" id="celular" name="celular" required />
+            </div>
+
+            <div class="campo">
+                <label for="contato">Contato</label>
+                <input type="text" id="contato" name="contato" />
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail*</label>
+                <input type="email" id="email" name="email" placeholder="Ex: seunome@email.com" required />
+            </div>
+
+        </form>
+
+    </div>
+
+    <div id="Documentos" class="container">
+        <h2 class="titulo"> Documentos </h2>
+        <hr />
+
+        <form>
+
+            <div class="campo">
+                <label for="identidade">Identidade*</label>
+                <input type="text" id="identidade" name="identidade" required />
+            </div>
+
+            <div class="campo">
+                <label for="cpf">CPF*</label>
+                <input type="text" id="cpf" name="cpf" required />
+            </div>
+
+            <div class="campo">
+                <label for="veiculo"> Possui veículo? </label>
+                <select id="veiculo" name="veiculo">
+                    <option selected disabled value=""> Selecione </option>
+                    <option value="sim"> Sim </option>
+                    <option value="nao"> Não </option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="cnh"> Habilitação </label>
+                <select id="cnh" name="cnh">
+                    <option selected disabled value=""> Selecione </option>
+                    <option value="a"> A </option>
+                    <option value="b"> B </option>
+                    <option value="ab"> AB </option>
+                    <option value="c"> C </option>
+                    <option value="d"> D </option>
+                    <option value="e"> E </option>
+                </select>
+            </div>
+
+        </form>
+
+        <button id="botao" type="submit">Enviar</button>
+
+    </div>
+
+</body>
+
+</html>
