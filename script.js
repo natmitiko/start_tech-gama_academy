@@ -1,4 +1,45 @@
-console.log("javascript carregado");
+'use strict';
+
+const limparCampo = (endereco) => {
+    document.getElementById('logradouro').value = '';
+    document.getElementById('bairro').value = '';
+    document.getElementById('cidade').value = '';
+    document.getElementById('estado').value = '';
+}
+
+const preencherCampo = (endereco) => {
+    document.getElementById('logradouro').value = endereco.logradouro;
+    document.getElementById('bairro').value = endereco.bairro;
+    document.getElementById('cidade').value = endereco.localidade;
+    document.getElementById('estado').value = endereco.uf;
+}
+
+const soNumero = (numero) => /^[0-9]+$/.test(numero);
+
+const cepValido = (cep) => cep.length == 8 && soNumero(cep);
+
+const pesquisarCep = async() => {
+    limparCampo();
+    const cep = document.getElementById('cep').value;
+    const url = `https://viacep.com.br/ws/${cep}/json/`;
+    
+    if (cepValido(cep)){
+        const dados = await fetch(url);
+        const endereco = await dados.json();
+        if (endereco.hasOwnProperty('erro')){
+            document.getElementById('logradouro').value = 'CEP inexistente';
+        } else {
+            preencherCampo(endereco);
+        }
+    } else {
+        document.getElementById('logradouro').value = 'Número inválido';
+    }
+    
+}
+
+document.getElementById('cep')
+        .addEventListener('focusout', pesquisarCep);
+
 
 // function validacaoCPF(cpf) {}
 
